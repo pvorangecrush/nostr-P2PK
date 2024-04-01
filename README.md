@@ -1,7 +1,6 @@
 # nostr-P2PK
-Cashu (NUT-11) P2PK Cashu-based micropayments client-relay note posting and relay-relay note reconciliation
+Cashu (NUT-11) P2PK Cashu-based micropayments client-relay note posting and relay-relay note reconciliation. This landing page will be use to stage updates to NDK and strfry to implement ecash incentivized note posting and inter-relay reconciliation through negentropy.
 
-## This landing page will be use to stage updates to NDK and strfry to implement ecash incentivized note posting and inter-relay reconciliation through negentropy.
 #### GLOSSARY:
 * `ecash-taco` - A JSON containing
     ```
