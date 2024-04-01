@@ -20,7 +20,7 @@ Cashu (NUT-11) P2PK Cashu-based micropayments client-relay note posting and rela
 * `relay-fee` - mSAT value of relay fee
 
 ### STAGE 1: Basic implementation client-to-relay submission for testing
-#### PROGRESS: Update NDK to send kind-01 notes wrapped in `ecash-taco`
+#### CLIENT: Update NDK to send kind-01 notes wrapped in `ecash-taco`
 * (TODO) Update NDK to request a designated `relay-mint` and `relay-fee` from a relay
 * (TODO) Update NDK to access a Cashu mint to check user Ecash balance
 * (TODO) Update NDK to transfer a Cashu mint balance to a designated `relay-mint`
@@ -28,7 +28,7 @@ Cashu (NUT-11) P2PK Cashu-based micropayments client-relay note posting and rela
 * (TODO) Update NDK to wrap kind-01 notes in an `ecash-taco`
 * (TODO) Update NDK to submit kind-01 note to relay in an `ecash-taco`
 
-### PROGRESS: Update strfy to handle kind-01 notes wrapped in `ecash-taco`
+#### RELAY: Update strfy to handle kind-01 notes wrapped in `ecash-taco`
 * (TODO) Update strfry to serve a designated `relay-mint` and `relay-fee` to requesting clients
 * (TODO) Update strfry to recognize `ecash-taco` wrapped kind-01 notes
 * (TODO) Update strfry to request unlock of `ecash-taco` Ecash from designated `relay-mint`
@@ -39,7 +39,7 @@ Cashu (NUT-11) P2PK Cashu-based micropayments client-relay note posting and rela
 * (PLAN) Choose incentive format: pay-per-request, pay-per-data, or both
 * (PLAN) Implement relay-to-relay negotiation
 
-#### STAGE 3: Improvments to create an optimized network
+### STAGE 3: Improvments to create an optimized network
 * (DISCUSS) User overpay for dynamic fees; a mechanism for return payment locked to `user-pubkey` at `relay-mint` in a dynamic fee environment.
 * (DISCUSS) Update NDK to subscribe to a relay's notes for currently designated `relay-fee` and `relay-mint`
 * (DISCUSS) Update NDK to choose relay or relays to post to based on current `relay-fee` and `relay-mint` data for a pool of relays
