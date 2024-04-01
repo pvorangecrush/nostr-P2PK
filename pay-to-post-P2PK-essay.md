@@ -38,6 +38,7 @@ In July 2023, the Pay to Pubkey (P2PK) feature was added to Cashu, which enhance
 
 #### Proposal: Ecash notes: incentivized post-to-relay
 ![Cashu Note](images/ecash_notes.png)
+
 Signed nostr notes are enclosed in a JSON submission along with a mint to collect ecash, the P2PK npub the ecash is signed to (the relay's npub), and the P2PK-encrypted Ecash.
 
 Proposed post dynamic:
@@ -51,6 +52,7 @@ The advantage of this proposed system is to provide relays with a natural incent
 
 #### Propsoal 2: Ecash negentropy negotiation: incentivized relay-to-relay syncing
 ![Relay Network](images/relay_network.png)
+
 The negentropy protocol on the [Strfry nostr relay](https://github.com/hoytech/strfry) is a set reconciliation protocol designed to efficiently synchronize stored messages between two parties, such as relays or clients. It operates over a Nostr protocol extension and allows for significant bandwidth savings by only exchanging the differences between the sets of messages that the two parties have, rather than transferring the entire set of messages or their identifiers. I propose that Ecash is utilized to monetize and coordinate note distribution between smaller relays (green) and larger distribution relays (red). In this way, smaller relays (green) collect Ecash & notes from users (blue) and pay some portion of the collected Ecash to distribution relays (red). Distribution relays may choose to monetize on a per sync or per MB synced basis. The intrinsic fee market of each activity is defined by the behavior of each member of the system: user, local relay, and distribution relay.
 
 #### Final Thoughts
